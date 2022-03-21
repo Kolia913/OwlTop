@@ -86,7 +86,8 @@ export const getStaticProps: GetStaticProps<TopPageProps> =
                     firstCategory: firstCategoryItem.id,
                     page,
                     products
-                }
+                },
+                revalidate: 60,
             };
         } catch {
             return {
